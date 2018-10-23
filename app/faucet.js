@@ -14,7 +14,7 @@ web3.eth.getCoinbase(function(err, coinbase) {
 });
 
 // Your deployed address changes every time you deploy.
-const faucetAddress = "0xf8767ad850761e0682fbb4949a5c51f9c364311b"; // <-- Put your own
+const faucetAddress = "0xda6a214aa4e5158597de4290458657a5f5d0c5f8"; 
 const faucetContractFactory = web3.eth.contract(JSON.parse(faucetCompiled.contracts["Faucet.sol:Faucet"].abi));
 const faucetInstance = faucetContractFactory.at(faucetAddress);
 
